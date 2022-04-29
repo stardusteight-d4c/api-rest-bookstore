@@ -25,7 +25,7 @@
 
 <p>A arquitetura REST é composta de um conjunto de diretrizes que podem ser implementadas conforme necessário. Isso faz com que as APIs REST sejam mais rápidas, leves e escaláveis, o que é ideal para a Internet das Coisas (IoT) e o desenvolvimento de aplicativos mobile.</p>
 
-![RestAPI](restAPI.png)
+![RestAPI](api-rest.png)
 
 ## Projeto
 
