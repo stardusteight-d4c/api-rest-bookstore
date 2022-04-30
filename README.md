@@ -1,39 +1,39 @@
-# API REST - Livraria Alura
+# API REST - Alura Bookstore
 
 <a href="https://nodejs.org/en/" target="_blank">![NodeJS](https://img.shields.io/badge/Node.js-white?style=flat&logo=node.js&logoColor=black)</a>
 <a href="https://expressjs.com/pt-br/" target="_blank">![Express.js](https://img.shields.io/badge/Express.js-white.svg?style=flat&logo=express&logoColor=black)</a>
 <a href="https://www.mongodb.com/pt-br" target="_blank">![MongoDB](https://img.shields.io/badge/MongoDB-white.svg?style=flat&logo=mongodb&logoColor=black)</a>
 <a href="https://www.postman.com/" target="_blank">![Postman](https://img.shields.io/badge/Postman-white?style=flat&logo=postman&logoColor=black)</a>
 
-### API (Interface de Programação de Aplicações)
-<p>Uma API (Interface de Programação de Aplicações) é uma série de rotinas programadas para <strong>acessar</strong> softwares ou plataformas webs. Elas simplificam o desenvolvimento de programas e aplicações, através da abstração dos diversos elementos que compõem um software, permitindo assim que o desenvolvedor não precise estar ciente dos detalhes da implementação do sistema como um todo, apenas precisará saber como utilizar os diferentes serviços fornecidos pelas APIs e como será a comunicação com outros elementos de seu software. Pense nas APIs como um mediador entre os usuários ou clientes e os recursos ou serviços web que eles querem obter. As APIs também servem para que organizações compartilhem recursos e informações e, ao mesmo tempo, mantenham a segurança, o controle e a obrigatoriedade de autenticação, pois permitem determinar quem tem acesso e o que pode ser acessado.</p>
+### API (Application Programming Interface)
+<p>An API (Application Programming Interface) is a series of routines programmed to <strong>access</strong> software or web platforms. They simplify the development of programs and applications, through the abstraction of the different elements that make up a software, thus allowing the developer to not need to be aware of the implementation details of the system as a whole, he will only need to know how to use the different services provided by the APIs. and how it will communicate with other elements of your software. Think of APIs as a mediator between users or customers and the resources or web services they want to get. APIs also allow organizations to share resources and information while maintaining security, control, and authentication enforcement by allowing them to determine who has access and what can be accessed.</p>
 
-<p>Enquanto você usufrui de um aplicativo ou site, este pode estar conectado a diversos outros sistemas e aplicativos via APIs sem que se perceba. Um exemplo popular é a rede social Twitter, sendo possível ler e publicar mensagens. De maneira semelhante, é possível ler e publicar mensagens no Reddit.</p>
+<p>While you are enjoying an application or website, it may be connected to several other systems and applications via APIs without you realizing it. A popular example is the social network Twitter, where you can read and publish messages. Similarly, you can read and post messages on Reddit.</p>
 
-<p>Uma API é um conjunto definido de mensagens de requisição e resposta HTTP, geralmente expresso nos formatos XML ou JSON. A chamada Web 2.0 vem abandonando o modelo de serviços SOAP em favor da técnica REST.</p>
+<p>An API is a defined set of HTTP request and response messages, usually expressed in XML or JSON formats. The so-called Web 2.0 has been abandoning the SOAP services model in favor of the REST technique.</p>
 
-### REST (Transferência de Estado Representacional)
-<p>Para que uma API seja considerada do tipo RESTful, ela precisa estar em conformidade com os seguintes critérios:</p>
+### REST (Representational State Transfer)
+<p>For an API to be considered RESTful, it must comply with the following criteria:</p>
 
-<li> Ter uma arquitetura cliente/servidor formada por clientes, servidores e recursos, com solicitações gerenciadas por HTTP.
-<li> Estabelecer uma comunicação stateless entre cliente e servidor. Isso significa que nenhuma informação do cliente é armazenada entre solicitações GET e toda as solicitações são separadas e desconectadas.
-<li> Armazenar dados em cache para otimizar as interações entre cliente e servidor.
-<li> Ter uma interface uniforme entre os componentes para que as informações sejam transferidas em um formato padronizado. Para tanto, é necessário que:
-<ul> 
-	<li type="circle"> os recursos solicitados sejam identificáveis e estejam separados das representações enviadas ao cliente;
-	<li type="circle"> os recursos possam ser manipulados pelo cliente por meio da representação recebida com informações suficientes para tais ações;
-	<li type="circle"> as mensagens autodescritivas retornadas ao cliente contenham informações suficientes para descrever como processá-las;
-	<li type="circle"> hipertexto e hipermídia estão disponíveis. Isso significa que após acessar um recurso, o cliente pode usar hiperlinks para encontrar as demais ações disponíveis para ele no momento.
+<li> Have a client/server architecture made up of clients, servers and resources, with requests managed over HTTP.
+<li> Establish stateless communication between client and server. This means that no client information is stored between GET requests and all requests are separated and disconnected.
+<li> Cache data to optimize client-server interactions.
+<li> Have a uniform interface between components so that information is transferred in a standardized format. For that, it is necessary that:
+<ul>
+	<li type="circle"> the requested resources are identifiable and separate from the representations sent to the client;
+	<li type="circle"> the resources can be manipulated by the client through the representation received with sufficient information for such actions;
+	<li type="circle"> the self-describing messages returned to the client contain enough information to describe how to process them;
+	<li type="circle"> hypertext and hypermedia are available. This means that after accessing a resource, the customer can use hyperlinks to find the other actions currently available to them.
 </ul>
-<li> Ter um sistema em camadas que organiza os tipos de servidores (responsáveis pela segurança, pelo carregamento de carga e assim por diante) envolvidos na recuperação das informações solicitadas em hierarquias que o cliente não pode ver.
-<li> Possibilitar código sob demanda (opcional): a capacidade de enviar um código executável do servidor para o cliente quando solicitado para ampliar a funcionalidade disponível ao cliente.
+<li> Have a tiered system that organizes the types of servers (responsible for security, load loading, and so on) involved in retrieving requested information into hierarchies that the client cannot see.
+<li> Enable code on demand (optional): The ability to push executable code from the server to the client when requested to extend the functionality available to the client.
 
-<p>A arquitetura REST é composta de um conjunto de diretrizes que podem ser implementadas conforme necessário. Isso faz com que as APIs REST sejam mais rápidas, leves e escaláveis, o que é ideal para a Internet das Coisas (IoT) e o desenvolvimento de aplicativos mobile.</p>
+<p>The REST architecture is made up of a set of guidelines that can be implemented as needed. This makes REST APIs faster, lighter, and more scalable, which is ideal for the Internet of Things (IoT) and mobile application development.</p>
 
 ![RestAPI](readme-img/api-rest.png)
 
-## Projeto
-<p>Separar arquivos com particularidades distintas das em comum, ou manter uma padronização dentro do seu código são conceitos fundamentais para a arquitetura do sistema, e são aspectos que devem serem utilizados em todos projetos de desenvolvimento de software. Este caso não se difere, seguindo um objetivo em comum, os arquivos estão separados em modules, controllers e routes:</p>
+## Project
+<p>Separating files with different characteristics from those in common, or maintaining a standardization within your code are fundamental concepts for the architecture of the system, and are aspects that must be used in all software development projects. This case is no different, following a common goal, the files are separated into modules, controllers and routes:</p>
 
 ```
 .
@@ -59,68 +59,68 @@
 399 directories, 2071 files
 ```
 
-`sudo su` executar como root<br>
-`apt-get install tree` instalar tree<br>
-`tree -d` exibir árvore<br>
+`sudo su` run as root<br>
+`apt-get install tree` install tree<br>
+`tree -d` display tree<br>
 
-<p>A seguir abortarei os principais conceitos utilizados para construir esta estrutura de arquivos, como o backend entrega os dados para o frontend e como a API REST fornece dados e recursos baseados em requisições e respostas HTTP.</p>
+<p>Next I'll break down the main concepts used to build this file structure, how the backend delivers data to the frontend and how the REST API provides data and resources based on HTTP requests and responses.</p>
 
 ### <a href="https://nodejs.org/en/" target="_blank">Node.js</a>
 
-<p>O Node.js pode ser definido como um ambiente de execução Javascript server-side. Isso significa que com o Node.js é possível criar aplicações Javascript para rodar como uma aplicação standalone em uma máquina, não dependendo de um browser para a execução, como estamos acostumados.</p>
+<p>Node.js can be defined as a server-side Javascript execution environment. This means that with Node.js it is possible to create Javascript applications to run as a standalone application on a machine, not depending on a browser for execution, as we are used to.</p>
 
-<p>Apesar de recente, o Node.js já é utilizado por grandes empresas no mercado de tecnologia, como Netflix, Uber e LinkedIn.</p>
-<p>O principal motivo de sua adoção é a sua alta capacidade de escala. Além disso, sua arquitetura, flexibilidade e baixo custo, o tornam uma boa escolha para implementação de Microsserviços e componentes da arquitetura Serverless. Inclusive, os principais fornecedores de produtos e serviços Cloud já têm suporte para desenvolvimento de soluções escaláveis utilizando o Node.js.</p>
+<p>Despite being recent, Node.js is already used by large companies in the technology market, such as Netflix, Uber and LinkedIn.</p>
+<p>The main reason for its adoption is its high scalability. In addition, its architecture, flexibility and low cost make it a good choice for implementing Microservices and Serverless architecture components. Even the main providers of Cloud products and services already support the development of scalable solutions using Node.js.</p>
 
 `node -v` node version<br>
-`nvm ls` versões instaladas<br>
-`nvm install 16.14.0` baixar versão 16.14.0<br>
-`nvm use 16.14.0` utilizar versão 16.14.0<br>
+`nvm ls` list installed versions<br>
+`nvm install 16.14.0` install version 16.14.0<br>
+`nvm use 16.14.0` use version 16.14.0<br>
 
 ### <a href="https://expressjs.com/pt-br/" target="_blank">Express.js</a>
 
-<p>Algumas tarefas comuns no desenvolvimento web não são suportadas diretamente pelo Node. Se você quiser que a sua aplicação possua diferentes verbos HTTP (por exemplo GET, POST, DELETE, etc), que gerencie requisições de diferentes URLs ("rotas"), apresente arquivos estáticos ou utilize templates para mostrar as respostas (response) de maneira dinâmica, você não terá muita praticidade usando apenas o Node. Você terá duas opções. Escrever o código por conta própria ou então evitar todo esse trabalho de reinventar a roda ao utilizar um framework.</p>
+<p>Some common tasks in web development are not directly supported by Node. If you want your application to have different HTTP verbs (for example GET, POST, DELETE, etc), manage requests from different URLs ("routes"), present static files or use templates to display responses (response) in a dynamics, you won't have much practicality using just Node. You will have two options. Write the code yourself or avoid all the work of reinventing the wheel by using a framework.</p>
 
-<p>Express é o framework Node mais popular e a biblioteca subjacente para uma série de outros frameworks do Node. O Express oferece soluções para:</p>
-    <li> Gerenciar requisições de diferentes verbos HTTP em diferentes URLs.
-    <li> Integrar "view engines" para inserir dados nos templates.
-    <li> Definir as configurações comuns da aplicação web, como a porta a ser usada para conexão e a localização dos modelos que são usados para renderizar a resposta.
-    <li> Adicionar novos processos de requisição por meio de "middleware" em qualquer ponto da "fila" de requisições.
+<p>Express is the most popular Node framework and the underlying library for a number of other Node frameworks. Express offers solutions for:</p>
+    <li> Manage requests for different HTTP verbs at different URLs.
+    <li> Integrate "view engines" to insert data into templates.
+    <li> Define common web application settings such as the port to use for connection and the location of templates that are used to render the response.
+    <li> Add new request processes through middleware at any point in the request "queue".
 
-<p>O Express é bastante minimalista, no entanto, os desenvolvedores têm liberdade para criar pacotes de middleware específicos com o objetivo de resolver problemas específicos que surgem no desenvolvimento de uma aplicação. Há bibliotecas para trabalhar com cookies, sessões, login de usuários, parâmetros de URL, dados em requisições POST, cabeçalho de segurança e tantos outros. Você pode achar uma lista de pacotes de middleware mantidos pela equipe Express em Express Middleware (juntamente com uma lista de pacotes populares desenvolvidos por terceiros).</p>
+<p>Express is quite minimalist, however, developers are free to create specific middleware packages in order to solve specific problems that arise in the development of an application. There are libraries to work with cookies, sessions, user login, URL parameters, data in POST requests, security header and many others. You can find a list of middleware packages maintained by the Express team at Express Middleware (along with a list of popular packages developed by third parties).</p>
 
-`npm init` iniciar npm<br>
-`npm install express --save` instalar express
+`npm init` start npm<br>
+`npm install express --save` install express
 
-### Recursos URL, Verbos HTTP e o CRUD
-<p>O alvo de uma requisição HTTP é chamada de "resource", ou recurso em português, com a natureza ainda não definida; Isso pode ser um documento, uma foto ou qualquer outra coisa. Cada recurso é identificado por uma Identificação de recursos uniforme, do inglês Uniform Resource Identifier (URI) usada pelo HTTP para identificar recursos.</p>
+### URL Resources, HTTP Verbs, and CRUD
+<p>The target of an HTTP request is called a "resource", with the nature not yet defined; This could be a document, a photo, or anything else. Each resource is identified by a Uniform Resource Identifier (URI) used by HTTP to identify resources.</p>
 
-<p>A identidade e a localização de recursos na Web são fornecidas, principalmente por um único URL (Uniform Resource Locator, um tipo de URI). Pode ser que as vezes as a identidade e a localização não são dadas pelo mesmo URI: O HTTP usa um cabeçalho HTTP específico, Alt-Svc quando o recurso solicitado quer que o cliente acesse-o de outra localização.</p>
+<p>The identity and location of resources on the web is provided primarily by a single URL (Uniform Resource Locator, a type of URI). Sometimes the identity and location are not given by the same URI: HTTP uses a specific HTTP header, Alt-Svc when the requested resource wants the client to access it from another location.</p>
 
 ![Url-Resource](readme-img/MDN-url.png)
 
-<p>Seu serviço vai prover uma url base e os verbos HTTP vão indicar qual ação está sendo requisitada pelo consumidor do serviço.</p>
+<p>Your service will provide a base url and the HTTP verbs will indicate what action is being requested by the service consumer.</p>
 
-<p>Por exemplo, considerando a URL dominio.com/rest/notas/, se enviarmos para ela uma requisição HTTP utilizando o verbo <strong>GET</strong>, provavelmente obteremos como resultado uma listagem de registros (notas, nesse caso). Por outro lado, se utilizarmos o verbo <strong>POST</strong>, provalmente estaremos tentando adicionar um novo registro, cujos dados serão enviados no corpo da requisição.</p>
+<p>For example, considering the URL domain.com/rest/notes/, if we send it an HTTP request using the verb <strong>GET</strong>, we will probably get a list of records as a result (notes, in this case ). On the other hand, if we use the verb <strong>POST</strong>, we are probably trying to add a new record, whose data will be sent in the body of the request.</p>
 
-<p>Da mesma forma, a URL dominio.com/rest/notas/1, por exemplo, poderia ser usada para diferentes finalidades, dependendo do verbo enviado na requisição. No caso do <strong>GET</strong>, essa URL provavelmente deveria nos retornar o registro de ID 1 (nesse caso, a nota de ID = 1). Já o verbo <strong>DELETE</strong> indicaria que desejamos remover esse registro.</p>
+<p>Likewise, the URL domain.com/rest/notes/1, for example, could be used for different purposes, depending on the verb sent in the request. In the case of <strong>GET</strong>, this URL should probably return us the record ID 1 (in this case, the score ID = 1). The verb <strong>DELETE</strong> would indicate that we want to remove this record.</p>
 
-<p><strong>CRUD</strong> são as quatro funções básicas que geralmente os sistemas que manipulam banco de dados devem poder executar:</p>
+<p><strong>CRUD</strong> are the four basic functions that generally database handling systems should be able to perform:</p>
 <ul>
-    <li>C: Create - criar um novo registro
-    <li>R: Read - ler (exibir) as informações de um registro
-    <li>U: Update - atualizar os dados do registro
-    <li>D: Delete - apagar um registro
+    <li>C: Create - create a new record
+    <li>R: Read - read (display) information from a record
+    <li>U: Update - update registry data
+    <li>D: Delete - delete a record
 </ul>
 
-<p>Por exemplo, se você precisa desenvolver desde uma simples agenda telefônica até um sistema complexo de gestão de faturamento de pedidos, você precisará realizar essas 4 ações para manipular as tabelas do banco de dados de seu sistema.</p>
+<p>For example, if you need to develop anything from a simple phone book to a complex order billing management system, you will need to perform these 4 actions to manipulate your system's database tables.</p>
 
-<p>Do ponto de vista do desenvolvedor, ele precisará criar as tabelas (modelos) do banco de dados, funções (controles) que atualizarão o banco de dados e as interfaces (visões), como página web ou aplicativo mobile, em que os usuários irão interagir com os dados.</p>
+<p>From the developer's point of view, he will need to create the tables (models) of the database, functions (controls) that will update the database and the interfaces (views), such as web page or mobile application, in which the users will interact with the data.</p>
 
-<p>Em sistemas mais sofisticados, os dados do CRUD podem ser manipulados por outros sistemas via API - Application Programming Interface.</p>
+<p>In more sophisticated systems, CRUD data can be manipulated by other systems via API - Application Programming Interface.</p>
 
 <br>
-<p>Fontes:</p>
+<p>Sources:</p>
 	
 *![RedHat](https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api)* -
 *![Wikipedia](https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es)* -
