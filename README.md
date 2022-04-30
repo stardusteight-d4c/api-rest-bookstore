@@ -1,4 +1,4 @@
-# API REST - Alura Bookstore
+# API REST - Bookstore
 
 <a href="https://nodejs.org/en/" target="_blank">![NodeJS](https://img.shields.io/badge/Node.js-white?style=flat&logo=node.js&logoColor=black)</a>
 <a href="https://expressjs.com/pt-br/" target="_blank">![Express.js](https://img.shields.io/badge/Express.js-white.svg?style=flat&logo=express&logoColor=black)</a>
