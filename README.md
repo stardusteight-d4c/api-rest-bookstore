@@ -37,8 +37,8 @@
 
 ```
 .
-├── node_modules<br>
-├── package.json<br>
+├── node_modules
+├── package.json
 ├── package-lock.json
 ├── server.js
 └── src
