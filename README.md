@@ -79,7 +79,7 @@
 
 ### <a href="https://expressjs.com/pt-br/" target="_blank">Express.js</a>
 
-<p>Some common tasks in web development are not directly supported by Node. If you want your application to have different HTTP verbs (for example GET, POST, DELETE, etc), manage requests from different URLs ("routes"), present static files or use templates to display responses (response) in a dynamics, you won't have much practicality using just Node. You will have two options. Write the code yourself or avoid all the work of reinventing the wheel by using a framework.</p>
+<p>Some common tasks in web development are not directly supported by Node. If you want your application to have different HTTP verbs (for example GET, POST, DELETE, etc), manage requests from different URLs ("routes"), present static files or use templates to display responses in a dynamics, you won't have much practicality using just Node. You will have two options. Write the code yourself or avoid all the work of reinventing the wheel by using a framework.</p>
 
 <p>Express is the most popular Node framework and the underlying library for a number of other Node frameworks. Express offers solutions for:</p>
     <li> Manage requests for different HTTP verbs at different URLs.
