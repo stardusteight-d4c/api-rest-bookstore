@@ -28,15 +28,25 @@
 ![RestAPI](api-rest.png)
 
 ## Projeto
+<p>Separar arquivos com particularidades distintas das em comum, ou manter uma padronização dentro do seu código são conceitos fundamentais para a arquitetura do sistema, e são aspectos que devem serem utilizados em todos projetos de desenvolvimento de software. Este caso não se difere, seguindo um objetivo em comum, os arquivos estão separados em modules, controllers e routes:</p>
+
+![tree](treetest.png)
+
+`sudo su` -> executar como root <br><br>
+`apt-get install tree` -> instalar tree <br><br>
+`tree -d` -> exibir árvore <br>
+
+<p>A seguir abortarei os principais diretórios desta estrutura de arquivos, as principais ferramentas e tecnologias utilizadas, como o backend entrega os dados para o frontend e como a API REST é uma interface que vai fornecer os nossos dados e recursos baseados em requisições e respostas HTTP</p>
+
+<p>A seguir abortarei os principais diretórios desta estrutura de arquivos, ferramentas e tecnologias utilizadas, como o backend entrega os dados para o frontend e como a API REST é uma interface que vai fornecer os nossos dados e recursos baseados em requisições e respostas HTTP.</p>
+
+### NodeJS ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=flat&logo=node.js&logoColor=white)
+
+<p>O Node.js pode ser definido como um ambiente de execução Javascript server-side. Isso significa que com o Node.js é possível criar aplicações Javascript para rodar como uma aplicação standalone em uma máquina, não dependendo de um browser para a execução, como estamos acostumados.</p>
 
 
-
-
-![tree](tree.png)
-- sudo su : Executar como root
-- apt-get install tree 
-- tree
-
+<p>Apesar de recente, o Node.js já é utilizado por grandes empresas no mercado de tecnologia, como Netflix, Uber e LinkedIn.</p>
+<p>O principal motivo de sua adoção é a sua alta capacidade de escala. Além disso, sua arquitetura, flexibilidade e baixo custo, o tornam uma boa escolha para implementação de Microsserviços e componentes da arquitetura Serverless. Inclusive, os principais fornecedores de produtos e serviços Cloud já têm suporte para desenvolvimento de soluções escaláveis utilizando o Node.js.</p>
 
 
 Fontes:
