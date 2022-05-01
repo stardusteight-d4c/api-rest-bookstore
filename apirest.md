@@ -119,13 +119,14 @@
 
 <p>Em sistemas mais sofisticados, os dados do CRUD podem ser manipulados por outros sistemas via API - Application Programming Interface.</p>
 
-<br>
+br>
 <p>Fontes:</p>
-	
-*![RedHat](https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api)* -
-*![Wikipedia](https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es)* -
-*![Mozilla](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introduction)* -
-*![A Opus Software](https://www.opus-software.com.br/node-js/)* -
-*![Devmedia](https://www.devmedia.com.br/servicos-restful-verbos-http/37103)* -
-*![Angelo Públio](https://angelopublio.com.br/blog/crud)*
 
+<a href="https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api" target="_blank">RedHat</a> -
+<a href="https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es" target="_blank">Wikipedia</a> -
+<a href="https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introduction" target="_blank">Mozilla</a> -
+<a href="https://www.opus-software.com.br/node-js/" target="_blank">A Opus Software</a> -
+<a href="https://www.devmedia.com.br/servicos-restful-verbos-http/37103" target="_blank">Devmedia</a> -
+<a href="https://angelopublio.com.br/blog/crud" target="_blank">Angelo Públio</a>
+
+&copy; Alura
