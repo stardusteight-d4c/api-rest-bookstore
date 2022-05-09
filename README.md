@@ -12,6 +12,25 @@
 
 <p>An API is a defined set of HTTP request and response messages, usually expressed in XML or JSON formats. The so-called Web 2.0 has been abandoning the SOAP services model in favor of the REST technique.</p>
 
+## low-level to high-level layers
+```
+Computer Network (Internet)
+SERVER SIDE
+<--->
+(API | PROTOCOLS)
+<--->
+CLIENT SIDE
+
+-------
+
+Operational System (OS)
+HARDWARE 
+<---> 
+(KERNEL | SHELL)
+<---> 
+USER
+```
+
 ### REST (Representational State Transfer)
 <p>For an API to be considered RESTful, it must comply with the following criteria:</p>
 
